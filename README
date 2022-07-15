@@ -1,0 +1,39 @@
+# Py - Sharp
+
+This is a project to test out embedding Python3 with its cool libraries into .NET applications.
+
+
+## Main goals
+   - In-process solution to run python code inside .net application
+   - Define a CSharp Class, instantiate from python, and bring back to main Program
+   - Allow the use of libraries like numpy and scipy
+
+## Pre-requisites
+- dotnet-sdk
+- Python 3.4 and above
+
+
+## Usage
+   **Note this is a prototype and thus does not really have a place to start outside of the code.**
+
+   UPDATE `SCRIPTPATH` to path of your python script.
+   UPDATE `PYBINPATH` to the path of your python binary. Dll for Windows, .so for most unix, and .dylib for macos (I think) 
+   UPDATE `PYTHONVARNAME` to the name of the variable you would like to get from the python script.
+      For example: if your script has a var `test_var` then `PYTHONVARNAME = "test_var";` 
+ 
+   To run it:
+   ```
+    dotnet run
+   ```
+## Libraries
+
+ ### .NET 
+   - pythonnet
+   - python
+ ### Python
+   - pythonnet
+
+## TODO
+ - [ ] Get it working with virtual env
+ - [ ] Try on more complex py script
+ - [ ] Try inside a ASP.NET application
