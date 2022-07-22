@@ -4,13 +4,15 @@
     <OutputType>Exe</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="11.3.0" />
     <PackageReference Include="python" Version="3.10.5" />
-    <PackageReference Include="pythonnet" Version="3.0.0-rc3" />
+    <PackageReference Include="pythonnet" Version="3.0.0-rc4" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0-preview.6.22324.4" />
   </ItemGroup>
 
 </Project>
